@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Häufig gestellte Fragen</title>
+    <style>
+        /* Grundlegendes Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Container für die FAQ */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Überschriften */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        /* Styling für die einzelnen FAQ-Punkte (Akkordeon-Effekt ohne JavaScript) */
+        details {
+            margin-bottom: 15px;
+            border: 1px solid #e1e8ed;
+            border-radius: 6px;
+            background-color: #fafbfc;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        /* Frage (Klickbarer Bereich) */
+        summary {
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 18px 20px;
+            cursor: pointer;
+            list-style: none; /* Entfernt den Standard-Pfeil */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #34495e;
+        }
+
+        /* Entfernt den Pfeil im Webkit (Safari/Chrome) */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Eigenes Plus/Minus Icon */
+        summary:after {
+            content: '+';
+            font-size: 1.5em;
+            color: #3498db;
+            line-height: 1;
+            transition: transform 0.3s ease;
+        }
+
+        /* Dreht das Plus-Zeichen zu einem 'x' (wirkt wie ein Minus), wenn geöffnet */
+        details[open] summary:after {
+            transform: rotate(45deg);
+            color: #e74c3c;
+        }
+
+        /* Antwort-Bereich */
+        .faq-content {
+            padding: 0 20px 20px 20px;
+            color: #555;
+            background-color: #ffffff;
+            border-top: 1px solid #e1e8ed;
+        }
+
+        .faq-content p {
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Häufig gestellte Fragen (FAQ)</h1>
+        <p class="subtitle">Hier finden Sie Antworten auf die wichtigsten Fragen.</p>
+
+        <!-- FAQ Eintrag 1 -->
+        <details>
+            <summary>Füge hier deine erste Frage ein?</summary>
+            <div class="faq-content">
+                <p>Hier kommt die Antwort auf deine erste Frage hin. Du kannst diesen Text einfach im HTML-Dokument überschreiben. Du kannst auch <strong>HTML-Tags</strong> verwenden, um Text fett zu machen oder <a href="#">Links</a> einzufügen.</p>
+            </div>
+        </details>
+
+        <!-- FAQ Eintrag 2 -->
+        <details>
+            <summary>Wie funktioniert dieses Akkordeon?</summary>
+            <div class="faq-content">
+                <p>Es nutzt die HTML5-Elemente <code>&lt;details&gt;</code> und <code>&lt;summary&gt;</code>. Das ist super praktisch, weil es komplett ohne JavaScript funktioniert und direkt von allen modernen Browsern unterstützt wird.</p>
+            </div>
+        </details>
+
+        <!-- FAQ Eintrag 3 -->
+        <details>
+            <summary>Wie füge ich eine weitere Frage hinzu?</summary>
+            <div class="faq-content">
+                <p>Kopiere einfach den gesamten Block von <code>&lt;details&gt;</code> bis <code>&lt;/details&gt;</code> im HTML-Code und füge ihn darunter wieder ein. Ändere dann einfach den Text in den entsprechenden Tags.</p>
+            </div>
+        </details>
+        
+        <!-- FAQ Eintrag 4 -->
+        <details>
+            <summary>Füge hier deine vierte Frage ein?</summary>
+            <div class="faq-content">
+                <p>Hier ist Platz für die vierte Antwort. Einfach den Text im Code-Editor anpassen.</p>
+            </div>
+        </details>
+
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Dein Name / Dein Projekt
+    </div>
+
+</body>
+</html>
