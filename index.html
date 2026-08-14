@@ -7,55 +7,56 @@
     <style>
         /* Grundlegendes Styling */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: #f4f7f6;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.5;
             margin: 0;
-            padding: 40px 20px;
+            padding: 15px 10px;
         }
 
         /* Container für die FAQ */
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
             background: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 20px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
         /* Überschriften */
         h1 {
             text-align: center;
             color: #2c3e50;
-            margin-bottom: 10px;
+            font-size: 1.4rem;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
 
         .subtitle {
             text-align: center;
             color: #7f8c8d;
-            margin-bottom: 40px;
-            font-size: 1.1em;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
         }
 
-        /* Styling für die einzelnen FAQ-Punkte (Akkordeon-Effekt ohne JavaScript) */
+        /* FAQ Einträge */
         details {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             border: 1px solid #e1e8ed;
             border-radius: 6px;
             background-color: #fafbfc;
             overflow: hidden;
-            transition: all 0.3s ease;
         }
-
+        
         /* Frage (Klickbarer Bereich) */
         summary {
             font-weight: 600;
-            font-size: 1.1em;
-            padding: 18px 20px;
+            font-size: 0.95rem; /* Textgröße verkleinert */
+            padding: 12px 14px; /* Innenabstand verkleinert */
             cursor: pointer;
-            list-style: none; /* Entfernt den Standard-Pfeil */
+            list-style: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -70,10 +71,11 @@
         /* Eigenes Plus/Minus Icon */
         summary:after {
             content: '+';
-            font-size: 1.5em;
+            font-size: 1.3em;
             color: #3498db;
             line-height: 1;
-            transition: transform 0.3s ease;
+            transition: transform 0.2s ease;
+            margin-left: 10px;
         }
 
         /* Dreht das Plus-Zeichen zu einem 'x' (wirkt wie ein Minus), wenn geöffnet */
@@ -84,23 +86,42 @@
 
         /* Antwort-Bereich */
         .faq-content {
-            padding: 0 20px 20px 20px;
+            padding: 0 14px 14px 14px;
+            font-size: 0.9rem; /* Textgröße der Antwort verkleinert */
             color: #555;
             background-color: #ffffff;
             border-top: 1px solid #e1e8ed;
         }
 
         .faq-content p {
-            margin-top: 15px;
+            margin-top: 10px;
             margin-bottom: 0;
         }
         
         /* Footer */
         .footer {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 25px;
             color: #aaa;
-            font-size: 0.9em;
+            font-size: 0.8em;
+        }
+
+        /* Spezieller Feinschliff für sehr kleine Bildschirme (Mobile) */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px 5px;
+            }
+            .container {
+                padding: 15px 12px;
+            }
+            summary {
+                font-size: 0.9rem;
+                padding: 10px 12px;
+            }
+            .faq-content {
+                font-size: 0.85rem;
+                padding: 0 12px 12px 12px;
+            }
         }
     </style>
 </head>
