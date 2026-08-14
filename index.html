@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Häufig gestellte Fragen</title>
+    <title>FAQ - Frequently Asked Questions</title>
     <style>
-        /* Grundlegendes Styling */
+        /* Base Styling */
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: #f4f7f6;
@@ -15,7 +15,7 @@
             padding: 15px 10px;
         }
 
-        /* Container für die FAQ */
+        /* Container */
         .container {
             max-width: 700px;
             margin: 0 auto;
@@ -25,7 +25,7 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
-        /* Überschriften */
+        /* Headings */
         h1 {
             text-align: center;
             color: #2c3e50;
@@ -36,12 +36,12 @@
 
         .subtitle {
             text-align: center;
-            color: #7f8c8d;
+            color: #546575; /* Darkened for better contrast */
             margin-bottom: 20px;
             font-size: 0.9rem;
         }
 
-        /* FAQ Einträge */
+        /* FAQ Items */
         details {
             margin-bottom: 10px;
             border: 1px solid #e1e8ed;
@@ -49,26 +49,36 @@
             background-color: #fafbfc;
             overflow: hidden;
         }
-        
-        /* Frage (Klickbarer Bereich) */
+
+        /* Interactive Question Header */
         summary {
             font-weight: 600;
-            font-size: 0.95rem; /* Textgröße verkleinert */
-            padding: 12px 14px; /* Innenabstand verkleinert */
+            font-size: 0.95rem;
+            padding: 14px; /* Increased for better touch target */
             cursor: pointer;
             list-style: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: #34495e;
+            outline-offset: -2px;
         }
 
-        /* Entfernt den Pfeil im Webkit (Safari/Chrome) */
+        /* Focus state for keyboard accessibility */
+        summary:focus-visible {
+            outline: 2px solid #3498db;
+            background-color: #f0f7fc;
+        }
+
+        /* Hide default arrows across all browsers */
         summary::-webkit-details-marker {
             display: none;
         }
+        summary::marker {
+            display: none;
+        }
 
-        /* Eigenes Plus/Minus Icon */
+        /* Custom Plus/Minus Icon */
         summary:after {
             content: '+';
             font-size: 1.3em;
@@ -78,17 +88,16 @@
             margin-left: 10px;
         }
 
-        /* Dreht das Plus-Zeichen zu einem 'x' (wirkt wie ein Minus), wenn geöffnet */
         details[open] summary:after {
             transform: rotate(45deg);
             color: #e74c3c;
         }
 
-        /* Antwort-Bereich */
+        /* Answer Content */
         .faq-content {
             padding: 0 14px 14px 14px;
-            font-size: 0.9rem; /* Textgröße der Antwort verkleinert */
-            color: #555;
+            font-size: 0.9rem;
+            color: #444;
             background-color: #ffffff;
             border-top: 1px solid #e1e8ed;
         }
@@ -97,16 +106,16 @@
             margin-top: 10px;
             margin-bottom: 0;
         }
-        
+
         /* Footer */
         .footer {
             text-align: center;
             margin-top: 25px;
-            color: #aaa;
-            font-size: 0.8em;
+            color: #666; /* Darkened for accessibility */
+            font-size: 0.8rem;
         }
 
-        /* Spezieller Feinschliff für sehr kleine Bildschirme (Mobile) */
+        /* Mobile Optimization */
         @media (max-width: 480px) {
             body {
                 padding: 10px 5px;
@@ -116,7 +125,7 @@
             }
             summary {
                 font-size: 0.9rem;
-                padding: 10px 12px;
+                padding: 12px; /* Kept large enough for fingers */
             }
             .faq-content {
                 font-size: 0.85rem;
@@ -131,38 +140,33 @@
         <h1>Frequently asked questions (FAQ)</h1>
         <p class="subtitle">Here are answers to some questions you might have.</p>
 
-        <!-- FAQ Eintrag 1 -->
         <details>
             <summary>Question Number 1?</summary>
             <div class="faq-content">
-                <p>Answer. Inclusive some <a href="#">links</a> einzufügen.</p>
+                <p>Answer text goes here, including some <a href="#">links</a> as needed.</p>
             </div>
         </details>
 
-        <!-- FAQ Eintrag 2 -->
         <details>
             <summary>Question Number 2?</summary>
             <div class="faq-content">
-                <p>Answer. Inclusive some <a href="#">links</a> einzufügen.</p>
+                <p>Answer text goes here, including some <a href="#">links</a> as needed.</p>
             </div>
         </details>
 
-        <!-- FAQ Eintrag 3 -->
         <details>
             <summary>Question Number 3?</summary>
             <div class="faq-content">
-                <p>Answer. Inclusive some <a href="#">links</a> einzufügen.</p>
-            </div>
-        </details>
-        
-        <!-- FAQ Eintrag 4 -->
-        <details>
-            <summary>Question Number 4?</summary>
-            <div class="faq-content">
-                <p>Answer. Inclusive some <a href="#">links</a> einzufügen.</p>
+                <p>Answer text goes here, including some <a href="#">links</a> as needed.</p>
             </div>
         </details>
 
+        <details>
+            <summary>Question Number 4?</summary>
+            <div class="faq-content">
+                <p>Answer text goes here, including some <a href="#">links</a> as needed.</p>
+            </div>
+        </details>
     </div>
 
     <div class="footer">
