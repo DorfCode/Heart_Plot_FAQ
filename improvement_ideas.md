@@ -10,6 +10,7 @@
    or PVC because of...
    or missed beat in measurement because of...
 8. An DinA4 PDF-file shall be made available on demand of the user to generate a printout for a doctors visit. That can be one page per deviating beat or several per page if this fits better and saves pages.
+   It shall add as well all relevant measured indicators like SD1, SD2, SD2/SD1, SDNN, SDRR, RMSSD, length of measurement, number of beats, number and percentage of PAC/PVC.
    This step is to be done only if all steps before are working properly and does not be integrated from the beginning on.
 
    
