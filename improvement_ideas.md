@@ -4,7 +4,7 @@
 3. the QRS-complex is of relevance to identify what kind of ectoptic beat happened. The QRS complex offers more data to be used in clustering the beat structure.
 4. Every abnormal beat shall be stored in a list so that after the heart plot recording the user can scroll through the list and click on it.
 5. When clicked on it, the user shall see the examination of the app based on the deeper look to the QRS-complex.
-6. This examination shall include a plot-view of the ecg including a part before and after the deviating beat. This can be scrollable within the mobile device screen.
+6. This examination shall include a plot-view of the ecg including a part before and after the deviating beat. This can be horizontally scrollable within the mobile device screen.
 7. Below the plot the examination shall be explained.
    E.g. PAC because of...
    or PVC because of...
