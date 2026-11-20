@@ -1,4 +1,6 @@
 # Improvement Ideas for the Heart Plot App.
+
+## ECG Usage
 1. get access to the ECG data from the Polar H10 in parallel to the RR-rate which is received already.
 2. the data shall be stored in an endles loop of 1 minute to allow access to the ecg data when an ectopic beat is detected or when any deviation is perceived and the ECG can help to cluster the deviation as an PAC, PVC or missed beat, etc.
 3. the QRS-complex is of relevance to identify what kind of ectoptic beat happened. The QRS complex offers more data to be used in clustering the beat structure. The app shall make use of state-of-the-art logic to make use of the QRS-complex.
@@ -13,4 +15,6 @@
    It shall add as well all relevant measured indicators like SD1, SD2, SD2/SD1, SDNN, SDRR, RMSSD, length of measurement, number of beats, number and percentage of PAC/PVC.
    This step is to be done only if all steps before are working properly and does not be integrated from the beginning on.
 
-   
+## other
+1. Sort the code in appropriate modules
+2. Make use of the accelaration sensors in the Polar H10 (save for later)
